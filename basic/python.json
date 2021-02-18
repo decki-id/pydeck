@@ -1,0 +1,14 @@
+[
+    {
+        "Name": "Decki Herdiawan Soepandi",
+        "Age": 27,
+        "Address": "Padalarang",
+        "Single": true
+    },
+    {
+        "Name": "Sutriyanto",
+        "Age": 32,
+        "Address": "Yogyakarta",
+        "Single": false
+    }
+]

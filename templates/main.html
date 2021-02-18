@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/red.css') }}">
+
+    <!-- Color Switcher -->
+    <link rel="stylesheet" class="alternative-color" id="Red" title="Red"
+        href="{{ url_for('static', filename='css/red.css') }}" disabled>
+    <link rel="stylesheet" class="alternative-color" id="Yellow" title="Yellow"
+        href="{{ url_for('static', filename='css/yellow.css') }}" disabled>
+    <link rel="stylesheet" class="alternative-color" id="Green" title="Green"
+        href="{{ url_for('static', filename='css/green.css') }}" disabled>
+    <link rel="stylesheet" class="alternative-color" id="Blue" title="Blue"
+        href="{{ url_for('static', filename='css/blue.css') }}" disabled>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome-513/css/all.css') }}">
+
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='images/decki-revota.jpg') }}">
+
+    {% block head%}{% endblock %}
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="/" id="decki">Decki</a>
+                <a href="/" id="herdiawans">Herdiawans</a>
+            </div>
+            <div class="nav-toggler"><i class="fas fa-fw fa-bars"></i></div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="/" class="{{ 'active' if active_page == 'home' else '' }}">
+                            <i class="fas fa-fw fa-home"></i>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about" class="{{ 'active' if active_page == 'about' else '' }}">
+                            <i class="fas fa-fw fa-user"></i>About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/certificates" class="{{ 'active' if active_page == 'certificates' else '' }}">
+                            <i class="fas fa-fw fa-id-card"></i>Certificates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/portfolios" class="{{ 'active' if active_page == 'portfolios' else '' }}">
+                            <i class="fas fa-fw fa-laptop"></i>Portfolios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blogs" class="{{ 'active' if active_page == 'blogs' else '' }}">
+                            <i class="fas fa-fw fa-newspaper"></i>Blogs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy {{ now }} <br>Deckiherdiawans.<br>All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        {% block body %}{% endblock %}
+    </div>
+
+    <div class="style-switcher">
+        <div class="switcher-toggle"><i class="fas fa-cog fa-spin"></i></div>
+        <h5>Color Switcher</h5>
+        <ul>
+            <li><a href="javascript:void(0);" title="Red" style="background-color: red"
+                    onclick="setActiveColor('Red')"></a></li>
+            <li><a href="javascript:void(0);" title="Yellow" style="background-color: yellow"
+                    onclick="setActiveColor('Yellow')"></a></li>
+            <li><a href="javascript:void(0);" title="Green" style="background-color: lime"
+                    onclick="setActiveColor('Green')"></a></li>
+            <li><a href="javascript:void(0);" title="Blue" style="background-color: dodgerblue"
+                    onclick="setActiveColor('Blue')"></a></li>
+        </ul>
+        <hr>
+        <h5>Body Skin</h5>
+        <label><input type="radio" class="body-skin" id="light" name="body-skin" value="light" checked>Light</label>
+        <label><input type="radio" class="body-skin" id="dark" name="body-skin" value="dark">Dark</label>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

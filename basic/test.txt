@@ -1,0 +1,4 @@
+This is text from Python.
+This is another text.
+This is another fuckin' text.
+This is another motherfuckin' goddamn text.

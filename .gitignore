@@ -1,0 +1,9 @@
+venv
+.vscode
+__pycache__
+/static/css
+/static/fontawesome-513
+/static/fonts
+/static/images
+/static/js
+bash.exe.stackdump
