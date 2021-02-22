@@ -4,22 +4,37 @@ import json
 from pandas.io.json import json_normalize
 
 
-def panda(results):
-    # PANDAS DATAFRAME
-    df = {
-        "Sale Quantity": [results[0][0], results[1][0], results[2][0], results[3][0]],
-        "Sale Value": [results[0][1], results[1][1], results[2][1], results[3][1]],
-        "Inventory Quantity": [
-            results[0][2],
-            results[1][2],
-            results[2][2],
-            results[3][2],
-        ],
-        "Inventory Value": [results[0][3], results[1][3], results[2][3], results[3][3]],
-    }
-    show = pd.DataFrame(df, index=["Quarter1", "Quarter2", "Quarter3", "Quarter4"])
-    return show
+# def panda(results):
+# PANDAS DATAFRAME PostgreSQL
+# df = {
+#     "Sale Quantity": [results[0][0], results[1][0], results[2][0], results[3][0]],
+#     "Sale Value": [results[0][1], results[1][1], results[2][1], results[3][1]],
+#     "Inventory Quantity": [
+#         results[0][2],
+#         results[1][2],
+#         results[2][2],
+#         results[3][2],
+#     ],
+#     "Inventory Value": [results[0][3], results[1][3], results[2][3], results[3][3]],
+# }
+# show = pd.DataFrame(df, index=["Quarter1", "Quarter2", "Quarter3", "Quarter4"])
 
+# PANDAS DATAFRAME SQL Server 2000
+# df = {
+#     "No. Trans": [results[0][0], results[1][0], results[2][0], results[3][0]],
+#     "Date Trans": [results[0][1], results[1][1], results[2][1], results[3][1]],
+#     "Type Trans": [
+#         results[0][2],
+#         results[1][2],
+#         results[2][2],
+#         results[3][2],
+#     ],
+#     "Notes": [results[0][3], results[1][3], results[2][3], results[3][3]],
+#     "User ID": [results[0][4], results[1][4], results[2][4], results[3][4]],
+# }
+# pd.set_option("display.max_colwidth", None)
+# show = pd.DataFrame(df)
+# return show
 
 # PANDAS SERIES
 # series = {
