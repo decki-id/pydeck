@@ -2,7 +2,6 @@
 # import sys
 # from Question import Question
 
-
 # MULTIPLE CHOICE QUIZ
 # question_prompts = [
 #     "\nWhat color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange\n\n",
