@@ -1,5 +1,5 @@
 # import re
-# import sys
+import sys
 # from Question import Question
 
 # MULTIPLE CHOICE QUIZ
@@ -166,3 +166,29 @@
 #     print(result)
 # else:
 #     print("The factor is undefined.")
+
+
+# BASIC FIBONACCI FROM GOOGLE
+# nterms = int(input("Insert terms long: "))
+# n1, n2 = 0, 1
+# num = 1
+# if (nterms == 1):
+#     print(n1)
+# else:
+#     while (num <= nterms):
+#         print(n1)
+#         nth = n1 + n2
+#         n1 = n2
+#         n2 = nth
+#         num += 1
+
+
+# BASIC FIBONACCI BY MYSELF
+# n1 = int(input("Insert first parameter: "))
+# n2 = int(input("Insert last parameter: "))
+# n3 = 1
+# while (n1 <= n2):
+#     print(n1)
+#     nth = n1 + n3
+#     n1 = n3
+#     n3 = nth
