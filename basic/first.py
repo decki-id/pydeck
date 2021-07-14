@@ -1,5 +1,5 @@
 # import re
-import sys
+# import sys
 # from Question import Question
 
 # MULTIPLE CHOICE QUIZ
@@ -183,12 +183,17 @@ import sys
 #         num += 1
 
 
-# BASIC FIBONACCI BY MYSELF
-# n1 = int(input("Insert first parameter: "))
-# n2 = int(input("Insert last parameter: "))
-# n3 = 1
-# while (n1 <= n2):
-#     print(n1)
-#     nth = n1 + n3
-#     n1 = n3
-#     n3 = nth
+# PYRAMID WITH 2 PARAMETERS (a: length, b: symbol)
+# a = int(input("Insert first parameter: "))
+# b = input("Insert second parameter: ")
+# for c in range(0, a):
+#     d = c + 1
+#     print(b * d)
+
+
+# PYRAMID WITH NUMBERS
+rows = int(input("Insert length: "))
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end=' ')
+    print('')
