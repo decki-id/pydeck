@@ -1,0 +1,76 @@
+{
+  "invarticle": [
+    {
+      "articleCode": "ER.IGO-TE482",
+      "articleName": "T-SHIRT LEROY BLACK",
+      "VendorKey": "IGO",
+      "VendorName": "ERIGO",
+      "categoryInit": 15,
+      "categoryName": "T-SHIRT",
+      "TypeInit": "01",
+      "TypeName": "BASIC",
+      "colourInit": "015",
+      "colourName": "BLACK",
+      "sex": "U",
+      "basePrice": "74000,00",
+      "salePrice": "250000,00",
+      "notes": "-"
+    }
+  ],
+  "inventory": [
+    {
+      "articleCode": "ER.IGO-TE482",
+      "barcode": "00ERTE1857",
+      "sizes": "S",
+      "CurrentBasePrice": "74000,00",
+      "CurrentSalePrice": "250000,00",
+      "qty": 0
+    },
+    {
+      "articleCode": "ER.IGO-TE482",
+      "barcode": "00ERTE1858",
+      "sizes": "L",
+      "CurrentBasePrice": "74000,00",
+      "CurrentSalePrice": "250000,00",
+      "qty": 0
+    },
+    {
+      "articleCode": "ER.IGO-TE482",
+      "barcode": "00ERTE1859",
+      "sizes": "XL",
+      "CurrentBasePrice": "74000,00",
+      "CurrentSalePrice": "250000,00",
+      "qty": 0
+    }
+  ],
+  "Response": {
+    "status": "SUCCEED",
+    "error": "",
+    "message": "",
+    "data": [
+      {
+        "Id": "ER.IGO-TE482",
+        "message": "update item 00ERTE1857 success",
+        "status": "SUCCEED",
+        "docnum": "00ERTE1857",
+        "series": ""
+      },
+      {
+        "Id": "ER.IGO-TE482",
+        "message": "create item 00ERTE1858 success",
+        "status": "SUCCEED",
+        "docnum": "00ERTE1858",
+        "series": ""
+      },
+      {
+        "Id": "ER.IGO-TE482",
+        "message": "create item 00ERTE1859 success",
+        "status": "SUCCEED",
+        "docnum": "00ERTE1859",
+        "series": ""
+      }
+    ],
+    "token": null,
+    "retCode": 200
+  }
+}
